@@ -16,7 +16,7 @@ import (
 	"github.com/micro/micro/proxy"
 	"github.com/micro/micro/registry"
 	"github.com/micro/micro/router"
-	"github.com/micro/micro/runtime"
+	// "github.com/micro/micro/runtime"
 	"github.com/micro/micro/server"
 	"github.com/micro/micro/service"
 	"github.com/micro/micro/store"
@@ -32,7 +32,7 @@ var OwncloudNamespace = "com.owncloud."
 // RuntimeServices to start as part of the fullstack option
 var RuntimeServices = []string{
 	// "network",  // :8085
-	"runtime",  // :8088
+	// "runtime",  // :8088
 	"registry", // :8000
 	"broker",   // :8001
 	"store",    // :8002
@@ -131,7 +131,7 @@ func AddRuntime(app *cli.App) {
 	app.Commands = append(app.Commands, tunnel.Commands()...)
 	app.Commands = append(app.Commands, network.Commands()...)
 	app.Commands = append(app.Commands, registry.Commands()...)
-	app.Commands = append(app.Commands, runtime.Commands()...)
+	// app.Commands = append(app.Commands, runtime.Commands()...)
 	app.Commands = append(app.Commands, server.Commands()...)
 	app.Commands = append(app.Commands, service.Commands()...)
 	app.Commands = append(app.Commands, store.Commands()...)
@@ -196,7 +196,7 @@ func setDefaults() {
 	// registry.Topic
 
 	// runtime
-	runtime.Name = OwncloudNamespace + "runtime"
+	// runtime.Name = OwncloudNamespace + "runtime"
 	// runtime.Address
 
 	// server
