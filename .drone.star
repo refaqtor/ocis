@@ -1,12 +1,12 @@
 config = {
   'apiTests': {
-    'coreBranch': 'master',
-    'coreCommit': '3f127eaf24ed539fd9effbc82db9b57df38e3157',
+    'coreBranch': 'trashbin-tests-ocis',
+    'coreCommit': '',
     'numberOfParts': 2
   },
   'uiTests': {
-    'phoenixBranch': 'master',
-    'phoenixCommit': '7d6ec754363934f9e0c8eae925dceefb942513b2',
+    'phoenixBranch': 'trashbin-tests-ocis',
+    'phoenixCommit': '',
     'suites': {
       'phoenixWebUI1': [
         'webUICreateFilesFolders',
